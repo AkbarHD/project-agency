@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Branding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand img {
+            width: 75px;
+        }
+
+        /* Nav Tab Styles */
+        .nav-tabs {
+            border-bottom: none;
+            margin-bottom: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-tabs .nav-item {
+            width: 50%;
+            text-align: center;
+        }
+
+        .nav-tabs .nav-link {
+            font-weight: 600;
+            color: #6c757d;
+            padding: 10px 20px;
+            border: none;
+            position: relative;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #000;
+            background-color: transparent;
+            border-bottom: 2px solid #000;
+        }
+
+        .nav-tabs .nav-link::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #dee2e6;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+        }
+
+        .nav-tabs .nav-link.active::after {
+            background-color: #000;
+        }
+
+        /* kenalan bersama revou */
+        .course-intro {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .course-intro p {
+            color: #000;
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+
+        .badge-custom {
+            display: inline-flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 14px;
+            color: #000;
+            margin-right: 15px;
+        }
+
+        .badge-check {
+            background-color: #FFD700;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+        }
+
+        .badge-check i {
+            font-size: 12px;
+        }
+
+
+        /* card styles */
+        .course-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card-header {
+            background-color: #fff;
+            border-bottom: none;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .course-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .badge-online {
+            background-color: #FFD700;
+            color: #000;
+            font-weight: 500;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .card-body {
+            padding: 16px;
+        }
+
+
+
+        .participants {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .participant-avatars {
+            display: flex;
+            margin-right: 8px;
+        }
+
+        .participant-avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-left: -8px;
+        }
+
+        .participant-avatar:first-child {
+            margin-left: 0;
+        }
+
+        .participants-count {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .tools-title {
+            font-size: 11px;
+            color: #6c757d;
+            margin-bottom: 0px;
+        }
+
+        .tools-icons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .tool-icon {
+            width: 85px;
+            height: 52px;
+            object-fit: contain;
+        }
+
+        .btn-learn {
+            background-color: #f13b57;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .btn-learn:hover {
+            background-color: #000;
+            color: white;
+        }
+
+        /* card program */
+        .program-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .program-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .program-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+        }
+
+        .certificate-badges {
+            display: flex;
+            gap: 8px;
+        }
+
+        .certificate-badge {
+            width: 48px;
+            height: 48px;
+        }
+
+        .card-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .program-info {
+            color: #6c757d;
+            font-size: 12px;
+            margin-bottom: 16px;
+        }
+
+        .badge-new {
+            background-color: #FFD700;
+            color: #000;
+            font-weight: 500;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+            flex: 1;
+            min-height: 150px;
+        }
+
+        .feature-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .feature-list li::before {
+            content: "\f00c";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #28a745;
+            margin-right: 8px;
+        }
+
+        .participants {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            margin-top: auto;
+        }
+
+        .participant-avatars {
+            display: flex;
+            margin-right: 8px;
+        }
+
+        .participant-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-left: -8px;
+        }
+
+        .participant-avatar:first-child {
+            margin-left: 0;
+        }
+
+        .participants-count {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn-enroll {
+            background-color: #000;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            margin-top: auto;
+        }
+
+        /* card ketiga */
+        .unik-kartu-kursus {
+            height: 100%;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .unik-header-kursus {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .unik-ikon-kursus {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .unik-sertifikat {
+            width: 52px;
+            height: 52px;
+        }
+
+        .unik-judul-kursus {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .unik-detail-kursus {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 10px;
+        }
+
+        .unik-fitur-kursus {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .unik-fitur-kursus i {
+            margin-right: 10px;
+            color: #28a745;
+            min-width: 16px;
+        }
+
+        .unik-tombol-daftar {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: auto;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .unik-badge-baru {
+            display: inline-block;
+            background-color: #ffd700;
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .unik-pengguna-terdaftar {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .unik-pengguna-terdaftar img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: -10px;
+            border: 2px solid #fff;
+        }
+
+        .unik-jumlah-pengguna {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* footer */
+        footer p {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: #000;
+        }
+
+        .icon-container {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 20px;
+            background-color: #fff;
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+            transition: clip-path 0.4s ease, background-color 0.4s ease;
+            text-align: center;
+            line-height: 100px;
+            border: 2px solid #ffc107;
+        }
+
+        .icon-container i {
+            color: #000;
+        }
+
+        .icon-container:hover {
+            clip-path: circle(50%);
+            background-color: #f0f0f0;
+        }
+
+        /* ------------ card terakhir ---------- */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        #businessesContent h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1a237e;
+        }
+
+        #businessesContent .btn-primary {
+            width: 100%;
+            background: #1a237e;
+            color: #ffd700;
+            font-weight: bold;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        #businessesContent .fa-check {
+            color: #3f51b5;
+        }
+
+        .play-video {
+            width: 80px;
+            height: 80px;
+            font-size: 24px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+        }
+
+        .play-video:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-container {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            #businessesContent .card {
+                border-radius: 20px;
+                margin: 15px;
+            }
+
+            #businessesContent .card-body {
+                padding: 20px;
+            }
+
+            #businessesContent h1 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #1a237e;
+                line-height: 1.3;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            #businessesContent .row.align-items-center {
+                flex-direction: column-reverse;
+            }
+
+            #businessesContent .video-container {
+                margin-bottom: 20px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            #businessesContent .video-container img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+
+            #businessesContent .play-video i {
+                color: #1a237e;
+                font-size: 20px;
+            }
+
+            #businessesContent p {
+                font-size: 16px;
+                color: #333;
+                text-align: left;
+                margin: 20px 0;
+            }
+
+            #businessesContent .list-unstyled {
+                padding-left: 0;
+                margin: 20px 0;
+            }
+
+            #businessesContent .list-unstyled li {
+                font-size: 14px;
+                margin-bottom: 15px;
+                display: flex;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            #businessesContent .list-unstyled li i {
+                color: #1a237e;
+                margin-right: 10px;
+                margin-top: 4px;
+            }
+
+            #businessesContent .btn-primary {
+                width: 100%;
+                background: #1a237e;
+                color: #ffd700;
+                font-weight: bold;
+                padding: 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+
+        .custom-container {
+            max-width: 85%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container d-flex align-items-center justify-content-center mt-5">
+            <a class="navbar-brand text-center" href="index2.html">
+                <img src="assets/revou.png" alt="RevoU Logo" class="rounded-circle logo-revou">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container custom-container mt-4">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">For Individuals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">For Businesses</a>
+            </li>
+        </ul>
+
+
+        <div id="individualsContent" class="tab-content active">
+            <div class="d-flex flex-wrap align-items-center justify-content-center course-intro">
+                <p>Kenalan sama RevoU mulai dari daftar kelas-kelas di bawah!</p>
+                <span class="badge-custom">
+                    <span class="badge-check"><i class="fas fa-check"></i></span>
+                    <strong>GRATIS!</strong>
+                </span>
+                <span class="badge-custom">
+                    <span class="badge-check"><i class="fas fa-check"></i></span>
+                    <strong>Dari Praktisi + Expert</strong>
+                </span>
+                <span class="badge-custom">
+                    <span class="badge-check"><i class="fas fa-check"></i></span>
+                    <strong>Sertifikat Digital</strong>
+                </span>
+            </div>
+
+            <!-- card mini course -->
+            <h4 class="text-center mt-5"> <strong>Explore Mini Course</strong></h4>
+            <div class="row">
+                <div class=" col-md-6 col-lg-4 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <img src="assets/logo-oren.jpg" alt="Digital Marketing" class="course-icon">
+                            <span class="badge badge-online">Online 10 Hari</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mini Course Digital Marketing</h5>
+                            <div class="participants">
+                                <div class="participant-avatars">
+                                    <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                    <img src="assets/user-male.png" alt="Participant" class="participant-avatar">
+                                    <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                </div>
+                                <span class="participants-count">380.000+ Sudah Gabung!</span>
+                            </div>
+                            <p class="tools-title">Belajar tools:</p>
+                            <div class="tools-icons">
+                                <img src="assets/ubber.jpg" alt="Google Trends" class="tool-icon">
+                                <img src="assets/whimsical-1.png" alt="Ubersuggest" class="tool-icon">
+                                <img src="assets/ubber.jpg" alt="Whimsical" class="tool-icon">
+                            </div>
+                            <button class="btn btn-learn">MULAI BELAJAR GRATIS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <img src="assets/logo-merah.jpg" alt="Digital Marketing" class="course-icon">
+                            <span class="badge badge-online">Online 10 Hari</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mini Course Digital Marketing</h5>
+                            <div class="participants">
+                                <div class="participant-avatars">
+                                    <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                    <img src="assets/user-male.png" alt="Participant" class="participant-avatar">
+                                    <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                </div>
+                                <span class="participants-count">380.000+ Sudah Gabung!</span>
+                            </div>
+                            <p class="tools-title">Belajar tools:</p>
+                            <div class="tools-icons">
+                                <img src="assets/ubber.jpg" alt="Google Trends" class="tool-icon">
+                                <img src="assets/whimsical-1.png" alt="Ubersuggest" class="tool-icon">
+                                <img src="assets/ubber.jpg" alt="Whimsical" class="tool-icon">
+                            </div>
+                            <button class="btn btn-learn">MULAI BELAJAR GRATIS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card course-card">
+                        <div class="card-header">
+                            <img src="assets/ungu.jpg" alt="Digital Marketing" class="course-icon">
+                            <span class="badge badge-online">Online 10 Hari</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mini Course Digital Marketing</h5>
+                            <div class="participants">
+                                <div class="participant-avatars">
+                                    <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                    <img src="assets/user-male.png" alt="Participant" class="participant-avatar">
+                                    <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                </div>
+                                <span class="participants-count">380.000+ Sudah Gabung!</span>
+                            </div>
+                            <p class="tools-title">Belajar tools:</p>
+                            <div class="tools-icons">
+                                <img src="assets/ubber.jpg" alt="Google Trends" class="tool-icon">
+                                <img src="assets/whimsical-1.png" alt="Ubersuggest" class="tool-icon">
+                                <img src="assets/ubber.jpg" alt="Whimsical" class="tool-icon">
+                            </div>
+                            <button class="btn btn-learn">MULAI BELAJAR GRATIS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card program -->
+            <h4 class="text-center mb-3 mt-3 fw-bolder">Explore Full Program</h4>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card program-card">
+                        <div class="program-header">
+                            <img src="assets/logo-merah.jpg" alt="Data Analytics" class="program-icon">
+                        </div>
+                        <h5 class="card-title">Data Analytics</h5>
+                        <p class="program-info">Live Program • 3 or 6 Months</p>
+                        <ul class="feature-list">
+                            <li>Understand & solve business problems using data</li>
+                            <li>Explore AI tools through hands-on projects</li>
+                            <li>Virtual internship with real cases from partners</li>
+                        </ul>
+                        <div class="participants">
+                            <div class="participant-avatars">
+                                <img src="assets/user-male.png" alt="Participant" class="participant-avatar">
+                                <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                <img src="assets/user-male.png" alt="Participant" class="participant-avatar">
+                            </div>
+                            <span class="participants-count">3,500+</span>
+                        </div>
+                        <button class="btn btn-enroll">ENROLL NOW</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card program-card">
+                        <div class="program-header">
+                            <img src="assets/ungu.jpg" alt="Digital Marketing" class="program-icon">
+                            <div class="certificate-badges">
+                                <img src="assets/badge.jpg" alt="Certificate" class="certificate-badge">
+                                <img src="assets/badge.jpg" alt="Certificate" class="certificate-badge">
+                            </div>
+                        </div>
+                        <h5 class="card-title">Digital Marketing</h5>
+                        <p class="program-info">Live Program • 3 or 6 Months</p>
+                        <ul class="feature-list">
+                            <li>Hands-on projects to master digital marketing tools</li>
+                            <li>Run real SME ad campaigns with actual budgets</li>
+                            <li>Virtual internship with real cases from partners</li>
+                        </ul>
+                        <div class="participants">
+                            <div class="participant-avatars">
+                                <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                <img src="assets/user-male.png" alt="Participant" class="participant-avatar">
+                                <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                            </div>
+                            <span class="participants-count">5,800+</span>
+                        </div>
+                        <button class="btn btn-enroll">ENROLL NOW</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card program-card">
+                        <div class="program-header">
+                            <img src="assets/logo-oren.jpg" alt="Software Engineering" class="program-icon">
+                        </div>
+                        <h5 class="card-title">Software Engineering</h5>
+                        <p class="program-info">
+                            <span class="badge badge-new">New Program</span>
+                            Live Program • 6 or 9 Months
+                        </p>
+                        <ul class="feature-list">
+                            <li>Master top programming languages & frameworks</li>
+                            <li>Hands-on full stack software development projects</li>
+                            <li>Be mentored by industry experts</li>
+                        </ul>
+                        <div class="participants">
+                            <div class="participant-avatars">
+                                <img src="assets/user-male.png" alt="Participant" class="participant-avatar">
+                                <img src="assets/user-female.png" alt="Participant" class="participant-avatar">
+                                <img src="assets/user-male.png" alt="Participant" class="participant-avatar">
+                            </div>
+                            <span class="participants-count">200+</span>
+                        </div>
+                        <button class="btn btn-enroll">ENROLL NOW</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card ketiga -->
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card unik-kartu-kursus">
+                        <div class="unik-header-kursus">
+                            <img src="assets/logo-oren.jpg" alt="Ikon Product Management" class="unik-ikon-kursus">
+                            <img src="assets/badge.jpg" alt="Sertifikat" class="unik-sertifikat">
+                        </div>
+                        <h2 class="unik-judul-kursus">Product Management</h2>
+                        <p class="unik-detail-kursus">Live Program • 3 or 6 Months</p>
+                        <div class="unik-fitur-kursus">
+                            <i class="fas fa-check"></i>
+                            <span>Master end-to-end product management</span>
+                        </div>
+                        <div class="unik-fitur-kursus">
+                            <i class="fas fa-check"></i>
+                            <span>Innovative product development projects</span>
+                        </div>
+                        <div class="unik-fitur-kursus">
+                            <i class="fas fa-check"></i>
+                            <span>Virtual internship with real cases from partners</span>
+                        </div>
+                        <div class="unik-pengguna-terdaftar">
+                            <img src="assets/user-female.png" alt="User 3">
+                            <img src="assets/user-male.png" alt="User 3">
+                            <img src="assets/user-female.png" alt="User 3">
+                            <span class="unik-jumlah-pengguna">1,000+</span>
+                        </div>
+                        <a href="#" class="unik-tombol-daftar">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card unik-kartu-kursus">
+                        <div class="unik-header-kursus">
+                            <img src="assets/ungu.jpg" alt="Ikon AI Academy" class="unik-ikon-kursus">
+                        </div>
+                        <h2 class="unik-judul-kursus">AI Academy</h2>
+                        <p class="unik-detail-kursus">
+                            <span class="unik-badge-baru">New Program</span>
+                            Live Program • 1-6 Weeks
+                        </p>
+                        <div class="unik-fitur-kursus">
+                            <i class="fas fa-check"></i>
+                            <span>Learn from top industry experts from AI venture</span>
+                        </div>
+                        <div class="unik-fitur-kursus">
+                            <i class="fas fa-check"></i>
+                            <span>Leverage AI for Marketers, SEO, Social Media, Creatives, and Marketing
+                                Analytics</span>
+                        </div>
+                        <div class="unik-fitur-kursus">
+                            <i class="fas fa-check"></i>
+                            <span>Practical techniques using popular AI tools</span>
+                        </div>
+                        <a href="#" class="unik-tombol-daftar">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- card terakhir -->
+        <div id="businessesContent" class="tab-content active">
+            <div class="card p-3">
+                <div class="card-body">
+
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h1 class="mb-4 text-black">Develop Team Skills and Strategies for Competitive Growth</h1>
+                            <p class="mb-4">Tailored Corporate Training Program Based on Your Needs</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check me-2"></i> Enhance crucial skills with targeted
+                                    training</li>
+                                <li class="mb-3"><i class="fas fa-check me-2"></i> Develop, retain, and advance key
+                                    talents</li>
+                                <li class="mb-3"><i class="fas fa-check me-2"></i> Case study learning for better
+                                    solutions & improvement</li>
+                                <li class="mb-3"><i class="fas fa-check me-2"></i> Track skills and measure ROI impact
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-lg mt-4 fs-6 text-warning fw bold px-4 w-100">LEARN
+                                MORE</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative video-container">
+                                <img src="assets/thumbnail.jpg" alt="Corporate Training" class="img-fluid">
+                                <div class="video-overlay">
+                                    <button class="btn btn-light rounded-circle play-video" data-bs-toggle="modal"
+                                        data-bs-target="#videoModal">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoModalLabel">Corporate Training</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="bg-light text-center py-4 mt-5">
+            <p>Temukan Lebih Banyak Insight di RevoU Podcast</p>
+            <a href="#" class="icon-container youtube">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a href="#" class="icon-container spotify">
+                <i class="fab fa-spotify fa-2x"></i>
+            </a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const tabs = document.querySelectorAll('.nav-link');
+                const individualsContent = document.getElementById('individualsContent');
+                const businessesContent = document.getElementById('businessesContent');
+
+                individualsContent.style.display = 'block';
+                businessesContent.style.display = 'none';
+
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+
+                        tabs.forEach(t => t.classList.remove('active'));
+                        this.classList.add('active');
+
+                        if (this.textContent === "For Individuals") {
+                            individualsContent.style.display = 'block';
+                            businessesContent.style.display = 'none';
+                        } else if (this.textContent === "For Businesses") {
+                            individualsContent.style.display = 'none';
+                            businessesContent.style.display = 'block';
+                        }
+                    });
+                });
+
+                const videoModal = document.getElementById('videoModal');
+                const videoFrame = videoModal.querySelector('iframe');
+
+                videoModal.addEventListener('show.bs.modal', function () {
+                    videoFrame.src = 'https://www.youtube.com/embed/Si4bwj3qyAY';
+                });
+
+                videoModal.addEventListener('hide.bs.modal', function () {
+                    videoFrame.src = '';
+                });
+            });
+        </script>
+</body>
+
+</html>
