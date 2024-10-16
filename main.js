@@ -1,10 +1,10 @@
             document.addEventListener('DOMContentLoaded', function () {
                 const tabs = document.querySelectorAll('.nav-link');
                 const individualsContent = document.getElementById('individualsContent');
-                const businessesContent = document.getElementById('businessesContent');
+                const CompanyProfileContent = document.getElementById('CompanyProfileContent');
 
                 individualsContent.style.display = 'block';
-                businessesContent.style.display = 'none';
+                CompanyProfileContent.style.display = 'none';
 
                 tabs.forEach(tab => {
                     tab.addEventListener('click', function (e) {
@@ -16,10 +16,10 @@
 
                         if (this.textContent === "For Individuals") {
                             individualsContent.style.display = 'block';
-                            businessesContent.style.display = 'none';
-                        } else if (this.textContent === "For Businesses") {
+                            CompanyProfileContent.style.display = 'none';
+                        } else if (this.textContent === "Company Profile") {
                             individualsContent.style.display = 'none';
-                            businessesContent.style.display = 'block';
+                            CompanyProfileContent.style.display = 'block';
                         }
                     });
                 });

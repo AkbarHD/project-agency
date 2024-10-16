@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo-bigpro.jpg">
 </head>
 
 <body>
     <nav class="navbar navbar-light bg-light">
         <div class="container d-flex align-items-center justify-content-center mt-5">
-            <a class="navbar-brand text-center" href="index2.html">
-                <img src="assets/revou.png" alt="RevoU Logo" class="rounded-circle logo-revou">
+            <a class="navbar-brand text-center" href="index.html">
+                <img src="assets/logo-bigpro.jpg" alt="RevoU Logo" class="rounded-circle logo-revou">
             </a>
         </div>
     </nav>
@@ -25,17 +26,17 @@
                 <a class="nav-link active" href="#">For Individuals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">For Businesses</a>
+                <a class="nav-link" href="#">Company Profile</a>
             </li>
         </ul>
 
 
-        <div id="individualsContent" class="tab-content active">
-            <div class="d-flex flex-wrap align-items-center justify-content-center course-intro">
-                <p>Kenalan sama RevoU mulai dari daftar kelas-kelas di bawah!</p>
+        <div id="individualsContent" class="tab-content active ">
+            <div class="d-flex flex-wrap align-items-center justify-content-center course-intro ">
+                <p>Pilih layanan dan mulai konsultasikan layanan sesuai dengan kebutuhan</p>
                 <span class="badge-custom">
                     <span class="badge-check"><i class="fas fa-check"></i></span>
-                    <strong>GRATIS!</strong>
+                    <strong>Lengkap</strong>
                 </span>
                 <span class="badge-custom">
                     <span class="badge-check"><i class="fas fa-check"></i></span>
@@ -48,32 +49,86 @@
             </div>
 
             <!-- card mini course -->
-            <h4 class="text-center mt-5"> <strong>Explore Mini Course</strong></h4>
+            <h4 class="text-center atas mb-4"> <strong>Paket Coaching Digital Marketing</strong></h4>
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card prime-card">
-                        <div class="popular-label">Paling Populer</div>
-                        <div class="card-body">
-                            <h5 class="card-titlee">Prime</h5>
-                            <p class="card-text">Paket ini ditujukan bagi perusahaan yang ingin mengembangkan produk
-                                baru
-                                dengan pendekatan yang lebih kompleks. Cocok untuk bisnis yang sedang mencari inovasi
-                                produk
-                                yang kompetitif, dari perencanaan hingga prototyping dan pengujian pasar.</p>
-                            <div class="price-section">
-                                <p class="price-label">Pembayaran Bulanan</p>
-                                <h2 class="price">Rp. 13.000.000</h2>
-                                <p class="price-period">Per Produk per Bulan</p>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card coaching-card d-flex flex-column">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-titlee">Basic Coaching</h4>
+                            <p class="card-text">Cocok untuk memberikan pemahaman dasar mengenai digital
+                                marketing,
+                                khususnya bagi pemula. Cocok untuk pelaku bisnis yang ingin mulai memahami strategi
+                                dasar media sosial dan penggunaan iklan digital untuk meningkatkan brand awareness.</p>
+                            <div class="mt-auto">
+                                <h2 class="price text-center">Rp.5.000.000</h2>
+                                <p class="session-info text-center">Sesi: 4 Sesi (1x per minggu) - 1,5 jam per sesi</p>
+                                <p class="subscription-info text-center">Termasuk langganan <img
+                                        src="assets/logo-bigpro-2.jpg" alt="BIGPRO" class="bigpro-logo"></p>
+                                <p class="period text-center">per bulan</p>
+                                <a href="https://api.whatsapp.com/send/?phone=6282130205734&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Basic%20Coaching,%20bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut.%3F&type=phone_number&app_absent=0"
+                                    class="btn btn-gradient btn-block" target="_blank" rel="noopener noreferrer">
+                                    Beli Sekarang
+                                </a>
                             </div>
-                            <a href="#" class="btn btn-selectt">Pilih Paket</a>
-                            <a href="#" class="detail-link">Lihat Fitur Prime <i class="fas fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card coaching-card d-flex flex-column">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-titlee">Advanced Coaching</h4>
+                            <p class="card-text">Dirancang untuk bisnis yang ingin mengoptimalkan digital
+                                marketing
+                                dengan strategi yang lebih terarah. Paket ini mencakup optimasi akun media sosial,
+                                strategi iklan berbayar yang efektif, serta cara meningkatkan konversi melalui konten
+                                dan kampanye digital.</p>
+                            <div class="mt-auto">
+                                <h2 class="price text-center">Rp.12.000.000</h2>
+                                <p class="session-info text-center">Sesi: 6 Sesi (1x per minggu) - 1,5 jam per sesi</p>
+                                <p class="subscription-info text-center">Termasuk langganan <img
+                                        src="assets/logo-bigpro-2.jpg" alt="BIGPRO" class="bigpro-logo"></p>
+                                <p class="period text-center">per bulan</p>
+                                <!-- <button class="btn btn-gradient btn-block">Beli Sekarang</button> -->
+                                <a href="https://api.whatsapp.com/send?phone=6282130205734&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Advanced%20Coaching,%20bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut%3F"
+                                    class="btn btn-gradient btn-block" target="_blank" rel="noopener noreferrer">
+                                    Beli Sekarang
+                                </a>
+                                <!-- <a href="#" class="detail-link">Detail Paket <i class="fas fa-chevron-down"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card coaching-card d-flex flex-column">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-titlee">Expert Coaching</h4>
+                            <p class="card-text">Paket coaching intensif ini fokus pada hasil dan konversi.
+                                Ideal untuk
+                                bisnis yang memerlukan strategi digital marketing yang terintegrasi di berbagai platform
+                                iklan, dengan pendampingan penuh untuk pengembangan branding dan peningkatan penjualan.
+                            </p>
+                            <div class="mt-auto">
+                                <h2 class="price text-center">Rp.19.000.000</h2>
+                                <p class="session-info text-center">Sesi: 12 Sesi (2x per minggu) - 1,5 jam per sesi</p>
+                                <p class="subscription-info text-center">Termasuk langganan <img
+                                        src="assets/logo-bigpro-2.jpg" alt="BIGPRO" class="bigpro-logo"></p>
+                                <p class="period text-center">per bulan</p>
+                                <!-- <button class="btn btn-gradient btn-block">Beli Sekarang</button> -->
+                                <a href="https://api.whatsapp.com/send?phone=6282130205734&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Expert%20Coaching,%20bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut%3F"
+                                    class="btn btn-gradient btn-block" target="_blank" rel="noopener noreferrer">
+                                    Beli Sekarang
+                                </a>
+                                <!-- <a href="#" class="detail-link">Detail Paket <i class="fas fa-chevron-down"></i></a> -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- card program -->
-            <h4 class="text-center mb-3 mt-3 fw-bolder">Explore Full Program</h4>
+            <h4 class="text-center mb-4 atas fw-bolder">Paket Corporate Consultant</h4>
             <div class="row mb-5">
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card consultant-card ">
@@ -84,13 +139,17 @@
                         <div class="price text-center">Rp.10.000.000</div>
                         <p class="session-info text-center">Sesi: 4 Sesi (1x per minggu) - 2 jam per sesi</p>
                         <ul class="feature-list">
-                            <li>Analisis SWOT lengkap untuk membantu menentukan kekuatan, kelemahan, peluang, dan
-                                ancaman.</li>
-                            <li>Pengembangan rencana bisnis jangka menengah, termasuk strategi ekspansi.</li>
-                            <li>Pemetaan strategi pemasaran yang sesuai dengan target pasar.</li>
-                            <li>Optimalisasi proses internal, termasuk alur kerja dan penggunaan teknologi.</li>
-                            <li>Pendampingan implementasi strategi hingga tahap eksekusi.</li>
-                            <li>Peninjauan dan evaluasi secara berkala.</li>
+                            <li>Analisis SWOT lengkap untuk membantu menentukan
+                                kekuatan, kelemahan, peluang, dan ancaman</li>
+                            <li>Pengembangan rencana bisnis jangka menengah,
+                                termasuk strategi ekspansi.</li>
+                            <li>Pemetaan strategi pemasaran yang sesuai dengan
+                                target pasar</li>
+                            <li>Optimalisasi proses internal, termasuk alur kerja dan
+                                penggunaan teknologi.</li>
+                            <li>Pendampingan implementasi strategi hingga tahap
+                                eksekusi</li>
+                            <li>Pelaporan dan evaluasi secara berkala.</li>
                         </ul>
                         <div class="button-container">
                             <a href="https://api.whatsapp.com/send?phone=6289603676088&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Basic%20Consultant.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut%3F"
@@ -104,21 +163,29 @@
                     <div class="card consultant-card">
                         <div class="consultant-header">
                             <img src="assets/medals.png" alt="Basic Consultant" class="consultant-level">
-                            <h5 class="card-title">Basic Consultant</h5>
+                            <h5 class="card-title">Advanced Consultant</h5>
                         </div>
-                        <div class="price text-center">Rp.10.000.000</div>
-                        <p class="session-info text-center">Sesi: 4 Sesi (1x per minggu) - 2 jam per sesi</p>
+                        <div class="price text-center">Rp.19.000.000</div>
+                        <p class="session-info text-center">Sesi: 8 Sesi (1x per minggu) - 2 jam per ses</p>
                         <ul class="feature-list">
-                            <li>Analisis SWOT lengkap untuk membantu menentukan kekuatan, kelemahan, peluang, dan
-                                ancaman.</li>
-                            <li>Pengembangan rencana bisnis jangka menengah, termasuk strategi ekspansi.</li>
-                            <li>Pemetaan strategi pemasaran yang sesuai dengan target pasar.</li>
-                            <li>Optimalisasi proses internal, termasuk alur kerja dan penggunaan teknologi.</li>
-                            <li>Pendampingan implementasi strategi hingga tahap eksekusi.</li>
-                            <li>Peninjauan dan evaluasi secara berkala.</li>
+                            <li>Analisis SWOT lengkap untuk membantu
+                                menentukan kekuatan, kelemahan, peluang, dan
+                                ancaman</li>
+                            <li>Pengembangan rencana bisnis jangka menengah,
+                                termasuk strategi ekspansi.</li>
+                            <li>Pemetaan strategi pemasaran yang sesuai dengan
+                                target pasar.</li>
+                            <li>Optimalisasi proses internal, termasuk alur kerja
+                                dan penggunaan teknologi.</li>
+                            <li>Pendampingan implementasi strategi hingga
+                                tahap eksekusi</li>
+                            <li>Pelaporan dan evaluasi secara berkala.</li>
                         </ul>
                         <div class="button-container">
-                            <button class="btn btn-select">PILIH PAKET</button>
+                            <a href="https://api.whatsapp.com/send?phone=6289603676088&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Adavanced%20Consultant.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut%3F"
+                                class="btn btn-select" target="_blank" rel="noopener noreferrer">
+                                PILIH PAKET
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +193,41 @@
                     <div class="card consultant-card">
                         <div class="consultant-header">
                             <img src="assets/medals.png" alt="Basic Consultant" class="consultant-level">
-                            <h5 class="card-title">Basic Consultant</h5>
+                            <h5 class="card-title">Expert Consultant</h5>
+                        </div>
+                        <div class="price text-center">Rp.10.000.000</div>
+                        <p class="session-info text-center">Sesi: 12 Sesi (1x per minggu) - 2 jam per sesi</p>
+                        <ul class="feature-list">
+                            <li>Analisis SWOT lengkap untuk membantu
+                                menentukan kekuatan, kelemahan, peluang, dan
+                                ancaman.</li>
+                            <li>Pengembangan rencana bisnis jangka menengah,
+                                termasuk strategi ekspansi.</li>
+                            <li>Pemetaan strategi pemasaran yang sesuai dengan target pasar.</li>
+                            <li>Optimalisasi proses internal, termasuk alur kerja dan
+                                penggunaan teknologi.</li>
+                            <li>Pendampingan implementasi strategi hingga tahap
+                                eksekusi.</li>
+                            <li>Pelaporan dan evaluasi secara berkala.</li>
+                        </ul>
+                        <div class="button-container">
+                            <a href="https://api.whatsapp.com/send?phone=6289603676088&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Expert%20Consultant.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut%3F"
+                                class="btn btn-select" target="_blank" rel="noopener noreferrer">
+                                PILIH PAKET
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card ketiga -->
+            <h4 class="text-center mb-4 atas fw-bolder">Paket Product Developement</h4>
+            <div class="row">
+                <!-- <div class="col-md-6 col-lg-4 mb-4 mt-3 mt-lg-0">
+                    <div class="card consultant-cardd">
+                        <div class="consultant-header-product">
+                            <img src="assets/medals.png" alt="Basic Consultant" class="consultant-level">
+                            <h5 class="card-title ms-5">Basic</h5>
                         </div>
                         <div class="price text-center">Rp.10.000.000</div>
                         <p class="session-info text-center">Sesi: 4 Sesi (1x per minggu) - 2 jam per sesi</p>
@@ -143,173 +244,240 @@
                             <button class="btn btn-select">PILIH PAKET</button>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> -->
 
-            <!-- card ketiga -->
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="card unik-kartu-kursus">
-                        <div class="unik-header-kursus">
-                            <img src="assets/logo-oren.jpg" alt="Ikon Product Management" class="unik-ikon-kursus">
-                            <img src="assets/badge.jpg" alt="Sertifikat" class="unik-sertifikat">
-                        </div>
-                        <h2 class="unik-judul-kursus">Product Management</h2>
-                        <p class="unik-detail-kursus">Live Program • 3 or 6 Months</p>
-                        <div class="unik-fitur-kursus">
-                            <i class="fas fa-check"></i>
-                            <span>Master end-to-end product management</span>
-                        </div>
-                        <div class="unik-fitur-kursus">
-                            <i class="fas fa-check"></i>
-                            <span>Innovative product development projects</span>
-                        </div>
-                        <div class="unik-fitur-kursus">
-                            <i class="fas fa-check"></i>
-                            <span>Virtual internship with real cases from partners</span>
-                        </div>
-                        <div class="unik-pengguna-terdaftar">
-                            <img src="assets/user-female.png" alt="User 3">
-                            <img src="assets/user-male.png" alt="User 3">
-                            <img src="assets/user-female.png" alt="User 3">
-                            <span class="unik-jumlah-pengguna">1,000+</span>
-                        </div>
-                        <a href="#" class="unik-tombol-daftar">Enroll Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card unik-kartu-kursus">
-                        <div class="unik-header-kursus">
-                            <img src="assets/ungu.jpg" alt="Ikon AI Academy" class="unik-ikon-kursus">
-                        </div>
-                        <h2 class="unik-judul-kursus">AI Academy</h2>
-                        <p class="unik-detail-kursus">
-                            <span class="unik-badge-baru">New Program</span>
-                            Live Program • 1-6 Weeks
-                        </p>
-                        <div class="unik-fitur-kursus">
-                            <i class="fas fa-check"></i>
-                            <span>Learn from top industry experts from AI venture</span>
-                        </div>
-                        <div class="unik-fitur-kursus">
-                            <i class="fas fa-check"></i>
-                            <span>Leverage AI for Marketers, SEO, Social Media, Creatives, and Marketing
-                                Analytics</span>
-                        </div>
-                        <div class="unik-fitur-kursus">
-                            <i class="fas fa-check"></i>
-                            <span>Practical techniques using popular AI tools</span>
-                        </div>
-                        <a href="#" class="unik-tombol-daftar">Enroll Now</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- card kemmpat -->
-            <div class="row">
-                <div class="col-md-4 col-lg-4">
-                    <div class="expert-card">
-                        <div class="expert-card__header">
-                            <div class="expert-card__medal">
-                                <span class="expert-card__medal-number">1<sup>st</sup></span>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card prime-card">
+                        <div class="card-body">
+                            <h5 class="card-titlee">Starter</h5>
+                            <p class="card-text">Paket ini dirancang untuk perusahaan yang
+                                sedang merencanakan peluncuran produk baru
+                                atau melakukan pengembangan produk secara
+                                sederhana. Cocok untuk UMKM atau bisnis yang
+                                sedang ingin memperluas portofolio produk
+                                dengan pendekatan sistematis.</p>
+                            <div class="price-section">
+                                <p class="price-label">Pembayaran Bulanan</p>
+                                <h2 class="price">Rp. 8.000.000</h2>
+                                <p class="price-period">Per Produk per Bulan</p>
                             </div>
-                            <h2 class="expert-card__title">Expert</h2>
+                            <a href="https://api.whatsapp.com/send?phone=6289603676088&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Starter%20Product%20Development.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut%3F"
+                                class="btn btn-selectt" target="_blank" rel="noopener noreferrer">
+                                PILIH PAKET
+                            </a>
                         </div>
-                        <div class="expert-card__body">
-                            <h3 class="expert-card__price">Rp. 13.000.000</h3>
-                            <p class="expert-card__session">Sesi: 12 Sesi (1x per minggu) - 2 jam per sesi</p>
-                            <ul class="expert-card__features">
-                                <li>Riset pasar dan tren mendalam untuk memaksimalkan peluang produk baru.</li>
-                                <li>Pengembangan desain produk dan fitur inovatif, termasuk aspek fungsional dan
-                                    estetika.
-                                </li>
-                                <li>Pembuatan prototipe skala besar untuk uji kelayakan produk.</li>
-                                <li>Pengujian pasar secara komprehensif dengan focus group discussions (FGD) dan
-                                    feedback
-                                    dari target konsumen.</li>
-                                <li>Pengembangan branding dan positioning produk yang sesuai dengan target pasar.</li>
-                                <li>Rencana peluncuran produk dengan strategi pemasaran yang kuat.</li>
-                                <li>Laporan dan analisis mendalam terkait performa produk sebelum peluncuran resmi.</li>
-                            </ul>
-                        </div>
-                        <button class="expert-card__cta">PILIH PAKET</button>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card prime-card">
+                        <div class="card-body">
+                            <h5 class="card-titlee">Adavance</h5>
+                            <p class="card-text">Paket ini ditujukan bagi perusahaan yang ingin
+                                mengembangkan produk baru dengan
+                                pendekatan yang lebih kompleks. Cocok untuk
+                                bisnis yang sedang mencari inovasi produk yang
+                                kompetitif, dari perencanaan hingga prototyping
+                                dan pengujian pasar.</p>
+                            <div class="price-section">
+                                <p class="price-label">Pembayaran Bulanan</p>
+                                <h2 class="price">Rp. 10.000.000</h2>
+                                <p class="price-period">Per Produk per Bulan</p>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=6289603676088&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Adavance%20Product%20Development.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut%3F"
+                                class="btn btn-selectt" target="_blank" rel="noopener noreferrer">
+                                PILIH PAKET
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card prime-card">
+                        <div class="popular-label">Paling Populer</div>
+                        <div class="card-body">
+                            <h5 class="card-titlee">Prime</h5>
+                            <p class="card-text">Paket ini ditujukan bagi perusahaan yang ingin
+                                mengembangkan produk baru dengan
+                                pendekatan yang lebih kompleks. Cocok untuk
+                                bisnis yang sedang mencari inovasi produk yang
+                                kompetitif, dari perencanaan hingga prototyping
+                                dan pengujian pasar.</p>
+                            <div class="price-section">
+                                <p class="price-label">Pembayaran Bulanan</p>
+                                <h2 class="price">Rp. 13.000.000</h2>
+                                <p class="price-period">Per Produk per Bulan</p>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=6289603676088&text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Prime%20Product%20Development.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut%3F"
+                                class="btn btn-selectt" target="_blank" rel="noopener noreferrer">
+                                PILIH PAKET
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
+    </div>
+    <!-- card terakhir -->
+    <div id="CompanyProfileContent" class="tab-content active">
+        <div class="bigpro-profile">
+            <div class="container">
+                <header class="hero">
+                    <div class="hero-content">
+                        <img src="assets/logo-bigpro.jpg" alt="BIGPRO Logo" class="hero-logo">
+                        <h1 class="hero-title">BIGPRO INDO AGENCY</h1>
+                        <p class="hero-subtitle">Solusi Pemasaran Digital Profesional di Indonesia</p>
+                        <a href="#" class="cta-button">Hubungi Kami</a>
+                    </div>
+                    <div class="hero-shape"></div>
+                </header>
+            </div>
 
-        <!-- card terakhir -->
-        <div id="businessesContent" class="tab-content active">
-            <div class="card p-3">
-                <div class="card-body">
-
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <h1 class="mb-4 text-black">Develop Team Skills and Strategies for Competitive Growth</h1>
-                            <p class="mb-4">Tailored Corporate Training Program Based on Your Needs</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-3"><i class="fas fa-check me-2"></i> Enhance crucial skills with targeted
-                                    training</li>
-                                <li class="mb-3"><i class="fas fa-check me-2"></i> Develop, retain, and advance key
-                                    talents</li>
-                                <li class="mb-3"><i class="fas fa-check me-2"></i> Case study learning for better
-                                    solutions & improvement</li>
-                                <li class="mb-3"><i class="fas fa-check me-2"></i> Track skills and measure ROI impact
-                                </li>
-                            </ul>
-                            <button class="btn btn-primary btn-lg mt-4 fs-6 text-warning fw bold px-4 w-100">LEARN
-                                MORE</button>
+            <div class="container">
+                <section class="about">
+                    <div class="container">
+                        <h2 class="section-title">Tentang Kami</h2>
+                        <div class="about-content">
+                            <div class="about-text">
+                                <p>BIGPRO INDO AGENCY adalah agen pemasaran digital yang Profesional di Indonesia,
+                                    didirikan untuk membantu bisnis dari berbagai skala dalam mencapai tujuan pemasaran
+                                    mereka melalui solusi digital yang inovatif. Kami menggabungkan kreativitas dan
+                                    analisis data untuk merancang strategi pemasaran yang efektif, meningkatkan
+                                    visibilitas merek, dan memaksimalkan potensi penjualan.</p>
+                            </div>
+                            <div class="about-decoration">
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-square"></div>
+                                <div class="decoration-triangle"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative video-container">
-                                <img src="assets/thumbnail.jpg" alt="Corporate Training" class="img-fluid">
-                                <div class="video-overlay">
-                                    <button class="btn btn-light rounded-circle play-video" data-bs-toggle="modal"
-                                        data-bs-target="#videoModal">
-                                        <i class="fas fa-play"></i>
-                                    </button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="container">
+                <section class="advantages">
+                    <div class="container">
+                        <h2 class="section-title">Keunggulan Kompetitif</h2>
+                        <div class="advantages-grid">
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <i class="fas fa-users advantage-icon"></i>
                                 </div>
+                                <h3>Pendekatan Personalisasi</h3>
+                                <p>Setiap klien mendapatkan perhatian khusus, dengan strategi yang disesuaikan untuk
+                                    mencapai tujuan unik mereka.</p>
+                            </div>
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <i class="fas fa-laptop-code advantage-icon"></i>
+                                </div>
+                                <h3>Penggunaan Teknologi Terbaru</h3>
+                                <p>Kami selalu mengikuti tren dan teknologi terbaru dalam pemasaran digital untuk
+                                    memberikan hasil terbaik.</p>
+                            </div>
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <i class="fas fa-chart-line advantage-icon"></i>
+                                </div>
+                                <h3>Analisis Data yang Mendalam</h3>
+                                <p>Kami menggunakan analisis data untuk memantau kinerja kampanye dan membuat
+                                    penyesuaian yang diperlukan untuk mencapai hasil optimal.</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </div>
 
-
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="videoModalLabel">Corporate Training</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="" allowfullscreen></iframe>
+            <div class="container-fluid vision-mission">
+                <section class="container">
+                    <div class="vision-mission-wrapper">
+                        <div class="vision">
+                            <h2 class="section-title-2">Visi</h2>
+                            <div class=" vision-content">
+                                <p>Menjadi <span class="highlight">solusi</span> digital marketing <span
+                                        class="highlight">terkemuka</span> yang memberikan <span
+                                        class="highlight">layanan</span> berkualitas tinggi dan <span
+                                        class="highlight">berdaya saing</span> melalui <span
+                                        class="highlight">inovasi</span> dan strategi digital yang <span
+                                        class="highlight">efisien</span> dan <span class="highlight">terukur</span>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mission">
+                            <h2 class="section-title-2">Misi</h2>
+                            <ul class="mission-list">
+                                <li>Mengembangkan solusi digital yang efektif untuk meningkatkan pertumbuhan bisnis
+                                    klien.</li>
+                                <li>Menghadirkan layanan digital marketing yang terjangkau namun profesional dengan
+                                    fokus pada hasil dan efisiensi.</li>
+                                <li>Menyediakan dukungan penuh dalam strategi pemasaran online, branding, dan
+                                    pengembangan produk untuk UMKM hingga perusahaan besar.</li>
+                                <li>Membangun hubungan jangka panjang dengan klien melalui hasil yang terukur dan
+                                    kepuasan pelanggan.</li>
+                            </ul>
                         </div>
                     </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-dark mb-3">Tentang BiGPRO Agency</h5>
+                    <p class="text-muted">BiGPRO Agency membawa Anda insight terbaru dan diskusi menarik seputar dunia
+                        bisnis dan profesional.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-dark mb-3">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">Beranda</a></li>
+                        <li><a href="#" class="text-muted">Episode Terbaru</a></li>
+                        <li><a href="#" class="text-muted">Arsip</a></li>
+                        <li><a href="#" class="text-muted">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-dark mb-3">Ikuti Kami</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <a href="#" class="icon-container youtube me-2">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                        <a href="#" class="icon-container spotify me-2">
+                            <i class="fab fa-spotify fa-2x"></i>
+                        </a>
+                        <a href="#" class="icon-container tiktok me-2">
+                            <i class="fab fa-tiktok fa-2x"></i>
+                        </a>
+                        <a href="#" class="icon-container instagram me-2">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="#" class="icon-container linkedin">
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0">&copy; 2024 BiGPRO Agency. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted me-3">Kebijakan Privasi</a>
+                    <a href="#" class="text-muted">Syarat dan Ketentuan</a>
+                </div>
+            </div>
         </div>
+    </footer>
 
 
-        <footer class="bg-light text-center py-4 mt-5">
-            <p>Temukan Lebih Banyak Insight di RevoU Podcast</p>
-            <a href="#" class="icon-container youtube">
-                <i class="fab fa-youtube fa-2x"></i>
-            </a>
-            <a href="#" class="icon-container spotify">
-                <i class="fab fa-spotify fa-2x"></i>
-            </a>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
