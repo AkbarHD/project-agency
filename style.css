@@ -425,6 +425,8 @@ body {
 .btn-select:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    background-color: #b7c12e;
+    color: white;
 }
 
 /* usp marketing */
