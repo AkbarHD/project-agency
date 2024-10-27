@@ -514,6 +514,11 @@ body {
     margin-left: 5px;
 } */
 
+#product.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product-card {
     border: none;
     border-radius: 20px;
@@ -521,9 +526,10 @@ body {
     position: relative;
     background: white;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card:hover {
@@ -543,12 +549,13 @@ body {
     border-top: 5px solid #2E7D32;
 }
 
+/* Card body styling */
 .card-body {
     padding: 30px 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    flex: 1;
 }
 
 .card-titlee {
@@ -567,6 +574,11 @@ body {
     margin-bottom: 25px;
     text-align: center;
     line-height: 1.6;
+    /* Set fixed height for description */
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .price-section {
@@ -589,12 +601,18 @@ body {
     font-weight: 500;
 }
 
+/* Features list styling */
 .features-list {
     text-align: left;
     margin: 20px 0;
     padding-left: 0;
     list-style: none;
     flex-grow: 1;
+    /* Set minimum height untuk list fitur */
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .features-list li {
@@ -614,6 +632,7 @@ body {
     font-weight: bold;
 }
 
+/* Button styling */
 .btn-selectt {
     background: linear-gradient(45deg, #69eb44, #2E7D32);
     border: none;
@@ -625,7 +644,8 @@ body {
     width: 100%;
     transition: all 0.3s ease;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: auto;
+    /* Push button to bottom */
     text-transform: uppercase;
 }
 
@@ -638,8 +658,12 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
-    .product-card {
-        margin-bottom: 30px;
+    .description {
+        min-height: auto;
+    }
+
+    .features-list {
+        min-height: auto;
     }
 }
 
