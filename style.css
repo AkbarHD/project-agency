@@ -215,6 +215,12 @@ body {
     transition: all 0.3s ease;
 }
 
+.usp-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .usp-item:last-child {
     margin-bottom: 0;
 }
@@ -571,10 +577,8 @@ body {
 .description {
     font-size: 14px;
     color: #666;
-    margin-bottom: 25px;
     text-align: center;
     line-height: 1.6;
-    /* Set fixed height for description */
     min-height: 70px;
     display: flex;
     align-items: center;
@@ -1099,7 +1103,6 @@ footer a:hover {
 .cs-card .description {
     font-size: 14px;
     color: #666;
-    margin-bottom: 25px;
     text-align: center;
     line-height: 1.6;
 }
@@ -1179,7 +1182,7 @@ footer a:hover {
 
 .cs-btn:hover {
     color: white;
-    background: linear-gradient(135deg, #514fff, #00CED1);
+    background: linear-gradient(to left, #86c646ef, #ccce4c);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(81, 79, 255, 0.3);
 }
