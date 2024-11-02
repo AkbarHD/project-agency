@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
@@ -27,7 +29,7 @@ body {
 }
 
 .nav-tabs .nav-item {
-    width: 50%;
+    width: 33.33%;
     text-align: center;
 }
 
@@ -58,6 +60,24 @@ body {
 
 .nav-tabs .nav-link.active::after {
     background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .nav-tabs {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .nav-tabs .nav-item:nth-child(1),
+    .nav-tabs .nav-item:nth-child(2) {
+        width: 50%;
+    }
+
+    .nav-tabs .nav-item:nth-child(3) {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
 }
 
 /* kenalan bersama revou */
@@ -196,7 +216,7 @@ body {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 3rem;
 }
@@ -1423,7 +1443,7 @@ footer a:hover {
 
 /* card terakhir */
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
     color: #2c3e50;
@@ -1724,4 +1744,279 @@ footer a:hover {
     .about-decoration {
         display: none;
     }
+}
+
+/* portofolio */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(45deg, #2196F3, #3F51B5);
+    color: white;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);
+}
+
+.portfolio-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    background: linear-gradient(45deg, #1a237e, #0d47a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stats-box,
+.roas-counter {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.stat-item h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a237e;
+}
+
+.portfolio-image-wrapper {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-image-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.revenue-counter .counter-box h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 2.5rem;
+    /* Ukuran default */
+}
+
+/* ukuran mobile portfolio */
+@media (max-width: 576px) {
+    .stats-box {
+        padding: 15px;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .stat-item h4 {
+        font-size: 1.4rem;
+        white-space: nowrap;
+        margin-bottom: 5px;
+    }
+
+    .stat-item p {
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .revenue-counter .counter-box {
+        padding: 1rem;
+    }
+
+    .revenue-counter .counter-box h2 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+
+    .revenue-counter .counter-box p {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+}
+
+.floating-shape,
+.floating-shape-alt {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.floating-shape {
+    background: linear-gradient(45deg, rgba(33, 150, 243, 0.1), rgba(63, 81, 181, 0.1));
+    right: -50px;
+    bottom: -50px;
+}
+
+.floating-shape-alt {
+    background: linear-gradient(45deg, rgba(63, 81, 181, 0.1), rgba(33, 150, 243, 0.1));
+    left: -50px;
+    top: -50px;
+}
+
+.animate-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+.animate-right {
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Hover effects */
+.portfolio-content-left:hover,
+.portfolio-content-right:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.counter-box h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.counter-box h2:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(45deg, #2196F3, #3F51B5);
+    border-radius: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .portfolio-title {
+        font-size: 1.75rem;
+    }
+
+    .stats-box {
+        margin: 2rem 0;
+    }
+
+    .portfolio-item {
+        padding: 2rem 0;
+    }
+}
+
+
+/* baru */
+/* Existing CSS remains the same, add these new styles */
+
+.large-image {
+    max-height: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.large-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #2196F3, #3F51B5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.counter-box.highlight {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(63, 81, 181, 0.1));
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+.clients-section {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.clients-grid {
+    position: relative;
+    padding: 1rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: none;
+    /* Menghilangkan shadow yang sebelumnya ada */
+    overflow: hidden;
+}
+
+.clients-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.clients-grid:hover img {
+    transform: scale(1.02);
+}
+
+
+.animate-up {
+    animation: floatUp 0.8s ease-out;
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .large-image {
+        max-height: 400px;
+    }
+
+
 }

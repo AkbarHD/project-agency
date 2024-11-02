@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logo-bigpro.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -64,6 +65,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link text text-nowrap" href="#">Company Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text text-nowrap" href="#">Portfolio</a>
             </li>
         </ul>
 
@@ -114,7 +118,7 @@
                 <div class="col-11 col-sm-12 col-md-6 col-lg-4 mb-4">
                     <div class="card coaching-card h-100">
                         <div class="card-body text-center">
-                            <h4 class="card-titlee mb-3 text-nowrap">Advance Coaching</h4>
+                            <h4 class="card-titlee mb-3 ">Advance Coaching</h4>
                             <h2 class="price mb-4">Rp.12.000.000</h2>
                             <ul class="feature-list">
                                 <li>Strategi iklan lintas platform</li>
@@ -681,7 +685,7 @@
     <!-- card terakhir -->
     <div id="CompanyProfileContent" class="tab-content active">
         <div class="bigpro-profile">
-            <div class="container">
+            <div class="container custom-container">
                 <header class="hero">
                     <div class="hero-content">
                         <img src="assets/logo-bigpro.jpg" alt="BIGPRO Logo" class="hero-logo">
@@ -694,7 +698,7 @@
                 </header>
             </div>
 
-            <div class="container">
+            <div class="container custom-container">
                 <section class="about">
                     <div class="container">
                         <h2 class="section-title">Tentang Kami</h2>
@@ -716,7 +720,7 @@
                 </section>
             </div>
 
-            <div class="container">
+            <div class="container custom-container">
                 <section class="advantages">
                     <div class="container">
                         <h2 class="section-title">Keunggulan Kompetitif</h2>
@@ -751,7 +755,7 @@
             </div>
 
             <div class="container-fluid vision-mission">
-                <section class="container">
+                <section class="container custom-container">
                     <div class="vision-mission-wrapper">
                         <div class="vision">
                             <h2 class="section-title-2">Visi</h2>
@@ -780,6 +784,138 @@
                         </div>
                     </div>
                 </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portofolio -->
+    <div id="PortfolioContent" class="tab-content">
+        <div class="container custom-container">
+            <div class="section-title text-center mb-5">
+                <p class="text-muted">Hasil nyata dari strategi digital marketing kami</p>
+            </div>
+
+            <!-- Case Study 1 -->
+            <div class="portfolio-item row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="portfolio-content-left animate-left p-4">
+                        <div class="achievement-badge mb-3">
+                            <i class="fas fa-chart-line me-2"></i>
+                            High Performance Results
+                        </div>
+                        <h3 class="portfolio-title">Hasil Maksimal, Biaya Minimal!</h3>
+                        <div class="stats-box my-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="stat-item">
+                                        <h4 class="mb-0">476</h4>
+                                        <p class="text-muted mb-0">New Leads</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-item">
+                                        <h4 class="mb-0">Rp 4.437</h4>
+                                        <p class="text-muted mb-0">Per Lead</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="portfolio-description">
+                            Dengan strategi marketing yang tepat, kami berhasil menghasilkan lead berkualitas
+                            dengan biaya yang sangat efisien. Setiap rupiah yang Anda investasikan menghasilkan
+                            return yang maksimal.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 mb-lg-0 mb-4">
+                    <div class="portfolio-image-wrapper large-image">
+                        <a href="assets/slide-1.png" data-fancybox="gallery" data-caption="Revenue Statistics">
+                            <img src="assets/slide-1.png" alt="Revenue Statistics"
+                                class="img-fluid rounded-lg shadow-lg">
+                        </a>
+                        <div class="floating-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="portfolio-item row align-items-center mb-5">
+                <div class="col-lg-6 mb-lg-0 mb-4">
+                    <div class="portfolio-image-wrapper large-image">
+                        <a href="assets/slide-2.png" data-fancybox="gallery" data-caption="ROAS Statistics">
+                            <img src="assets/slide-2.png" alt="ROAS Statistics" class="img-fluid rounded-lg shadow-lg">
+                        </a>
+                        <div class="floating-shape-alt"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="portfolio-content-right animate-right p-4">
+                        <div class="achievement-badge mb-3">
+                            <i class="fas fa-rocket me-2"></i>
+                            Outstanding ROAS
+                        </div>
+                        <h3 class="portfolio-title">Investasi Iklan 15x Lebih Efektif</h3>
+                        <div class="roas-counter my-4">
+                            <div class="counter-box">
+                                <h2 class="display-4 fw-bold text-primary">15.48x</h2>
+                                <p class="text-muted mb-0">Return On Ad Spend</p>
+                            </div>
+                        </div>
+                        <p class="portfolio-description">
+                            Setiap rupiah yang Anda investasikan dalam iklan bekerja 15 kali lebih keras untuk
+                            menghasilkan pendapatan. Strategi iklan kami terbukti sangat efisien dengan ROI yang tinggi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="portfolio-item row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="portfolio-content-left animate-left p-4">
+                        <div class="achievement-badge mb-3">
+                            <i class="fas fa-crown me-2"></i>
+                            Revenue Achievement
+                        </div>
+                        <h3 class="portfolio-title">Optimalisasi yang Menghasilkan</h3>
+                        <div class="revenue-counter my-4">
+                            <div class="counter-box highlight">
+                                <h2 class="display-4 fw-bold gradient-text">Rp 84.082.600</h2>
+                                <p class="text-muted mb-0">Total Revenue Generated</p>
+                            </div>
+                        </div>
+                        <p class="portfolio-description">
+                            Dengan biaya iklan yang efisien, kami berhasil mengoptimalkan setiap rupiah yang Anda
+                            investasikan.
+                            Hasilnya? Keuntungan sebesar 84 juta rupiah berhasil diraih! Ini menunjukkan bahwa kampanye
+                            iklan
+                            kami tidak hanya efektif dalam menjangkau audiens, tetapi juga sangat efisien dalam
+                            menghasilkan konversi.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 mb-lg-0 mb-4">
+                    <div class="portfolio-image-wrapper large-image">
+                        <a href="assets/slide-3.png" data-fancybox="gallery" data-caption="Revenue Achievement">
+                            <img src="assets/slide-3.png" alt="Revenue Achievement"
+                                class="img-fluid rounded-lg shadow-lg">
+                        </a>
+                        <div class="floating-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clients Section -->
+            <div class="clients-section ">
+                <div class=" text-center">
+                </div>
+                <div class="clients-wrapper">
+                    <div class="clients-grid animate-up">
+                        <a href="assets/nama_perusahaan.png" data-fancybox="gallery" data-caption="Our Clients">
+                            <img src="assets/nama_perusahaan.png" alt="Our Clients" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -838,6 +974,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="main.js"></script>
 </body>
 
