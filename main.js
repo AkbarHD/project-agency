@@ -40,6 +40,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     Fancybox.bind("[data-fancybox]", {
+        buttons: [
+                "zoom",
+                "slideShow",
+                "fullScreen",
+                "close"
+            ],
+            wheel: false,
+            transitionEffect: "slide",
         Image: {
             zoom: true,
         },
